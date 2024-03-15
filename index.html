@@ -5,16 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Responsive Food Restaurant Design</title>
 
+	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 	<!-- fontawesome cdn link -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.js.cloudfare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 	<!-- custom css link -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
 	<!-- Header section starts here -->
 	<header>
-		<a href="#" class="logo"><i class="fas-fa-utensils"></i>Foodie</a>
+		<a href="#" class="logo"><i class="fas fa-utensils"></i>Foodie</a>
 		<nav class="navbar">
 			<a class="active" href="#home">home</a>
 			<a href="#dishes">dishes</a>
@@ -25,14 +32,74 @@
 		</nav>
 
 		<div class="icons">
-			<i class="fas fa-bars" id="bars"></i>
+			<i class="fas fa-bars" id="menu-bars"></i>
 			<i class="fas fa-search" id="search-icons"></i>
 			<a href="#" class="fas fa-heart"></a>
 			<a href="#" class="fas fa-shopping-cart"></a>
 		</div>
 
 	</header>
-	<!-- Header secton ends here -->
+	<!-- Header secton form -->
+	<form action="" id="search-form">
+		<input type="search" placeholder="search here..." id="search-box">
+		<label for="search-box" class="fas fa-search"></label>
+		<i class="fas fa-times" id="close"></i>
+	</form>
+
+
+	<!-- Home section starts here -->
+	<section class="home" id="home">
+		<div class="swiper-container home-slider"> 
+			<div class="swiper-wrapper wrapper">
+				<div class="swiper-slide">
+					<div class="content">
+						<span>our special dish</span>
+						<h3>spicy noodles</h3>
+						<p>lorem ipsum dolor a sit met consectur adipiscing. Sit natas colur? </p>
+						<a href="#" class="btn">Order now</a>
+					</div>
+					<div class="image">
+						<img src="Css/images/OIP (9).jpeg" alt="">
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="content">
+						<span>our special dish</span>
+						<h3>hot steak</h3>
+						<p>lorem ipsum dolor a sit met consectur adipiscing. Sit natas colur? </p>
+						<a href="#" class="btn">Order now</a>
+					</div>
+					<div class="image">
+						<img src="Css/images/OIP (2).jpeg" alt="">
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="content">
+						<span>our special dish</span>
+						<h3>fried chicken</h3>
+						<p>lorem ipsum dolor a sit met consectur adipiscing. Sit natas colur? </p>
+						<a href="#" class="btn">Order now</a>
+					</div>
+					<div class="image">
+						<img src="Css/images/OIP (10).jpeg" alt="">
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="content">
+						<span>our special dish</span>
+						<h3>fruit salad</h3>
+						<p>lorem ipsum dolor a sit met consectur adipiscing. Sit natas colur? </p>
+						<a href="#" class="btn">Order now</a>
+					</div>
+					<div class="image">
+						<img src="Css/images/download.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</section>
+	<!-- Home section ends here -->
 
 
 
@@ -58,10 +125,9 @@
 
 
 
-
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- custom js file link -->
-<script type="text/javascript" src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
